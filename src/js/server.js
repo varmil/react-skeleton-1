@@ -9,7 +9,8 @@ import routes from './routes';
 
 const app = express();
 app.use(compression());
-app.use(express.static(path.join(__dirname, '../../public')));
+// https://github.com/expressjs/serve-static#index
+app.use(express.static(path.join(__dirname, '../../public'), { index: false }));
 
 function renderPage(appHtml) {
   return `
