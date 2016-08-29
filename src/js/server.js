@@ -23,6 +23,7 @@ function renderPage(appHtml) {
         </head>
         <body>
             <div id="content">${appHtml}</div>
+            <script src="/app.bundle.js"></script>
         </body>
     </html>
   `;

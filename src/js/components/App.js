@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
+import style from './App.css';
 
 const App = (props) => (
-  <div>
+  <div className={style.appDivFoo}>
     This is App component!
     <ul>
       <li><Link to="/about">About</Link></li>
